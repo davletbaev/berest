@@ -81,7 +81,7 @@ const genericTask = (mode = 'development') => {
 
   // Building tasks series
   return [
-    Object.assign(tasks.clean('dist'), { displayName: `Clean bulding folder - ${ modeType }` }),
+    Object.assign(tasks.clean('docs'), { displayName: `Clean bulding folder - ${ modeType }` }),
     Object.assign(tasks.views(mode), { displayName: `Build HTML - ${ modeType }` }),
     Object.assign(tasks.fonts(mode), { displayName: `Build Fonts - ${ modeType }` }),
     Object.assign(tasks.styles(mode), { displayName: `Build Styles - ${ modeType }` }),
