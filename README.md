@@ -1,4 +1,4 @@
-# Template Repository
+# Berest Project (27.06.19)
 
 Template repository with gulp pipeline.
 Included:
