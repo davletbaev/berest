@@ -17,7 +17,7 @@ const genericTask = (mode = 'development') => {
   const startBrowserSync = (done) => {
     const bs = browserSync.init({
       server: {
-        baseDir: "./dist",
+        baseDir: "./docs",
         serveStaticOptions: {
           extensions: ['html']
         }
