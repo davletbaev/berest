@@ -25,7 +25,7 @@ const buildStyles = (mode, bs) => (done) => {
     ...((mode === 'production') ? [
       uncss({
         html: ['docs/**/*.html'],
-        ignore: ['\.js-.*']
+        ignore: ['\.js-.*', '\.fotorama-.*', '\.modal-.*', '\.collapse', '\.slick-.*']
       }),
       cssnano,
     ] : [])

@@ -5,17 +5,1430 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <meta name="robots" content="noindex">
+    <title>Берест</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <img class="logo__img" src="img/logo/logo.png" alt="Берест">
+                <span class="visually-hidden">ООО «Берест»</span>
+                <span class="visually-hidden--sm">Строительство каркасных домов в Москве и МО</span>
+            </h1>
+            <div class="header__contacts header-contacts">
+                <div class="header-contacts__item header-contacts__phone">
+                    <a class="header-contacts__phone-link" href="tel:+7 989 333-45-44">+7 989 333-45-44</a>
+                </div>
+                <div class="header-contacts__item header-contacts__address">
+                    <a class="header-contacts__address-link" href="#">Москва, МКАД 65 км, ТД Синдика, д. 3/8</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <main class="main">
-        <h1>Hello world!</h1>
+        <section class="cover">
+            <div class="cover__bg"></div>
+            <div class="cover__content container">
+                <p class="cover__heading">Построим каркасный дом для отдыха или постоянного проживания дешевле конкурентов на 15%</p>
+                <p class="cover__desc">За счет собственного производства в МО и сокращения издержек на всех этапах строительства </p>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form"> Получить бесплатную консультацию </button>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="contact-form" tabindex="-1" role="dialog" aria-label="Форма обратной связи" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="contact-form">
+                        <button type="button" class="contact-form__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="contact-form__title" id="free-advice-label">Заполните ваши данные</h5>
+                        <p>Чтобы наш менеджер перезвонил вам и проконсультировал по всем вопросам</p>
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="free-advice-name" class="visually-hidden">Введите ваше имя</label>
+                                <input type="text" class="form-control" id="free-advice-name" placeholder="Введите ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="free-advice-number" class="visually-hidden">Введите ваш номер</label>
+                                <input type="tel" class="form-control" id="free-advice-number" placeholder="Введите ваш номер">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg">Получить бесплатную консультацию</button>
+                            </div>
+                            <div class="form-group">
+                                <p class="form__notice">Нажимая кнопку вы соглашаетесь на обработку персональных данных</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section features">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="feature">
+                            <div class="feature__img-wrap">
+                                <img class="feature__img" src="img/content/features/house.png" alt="Дом">
+                            </div>
+                            <div class="feature__content">
+                                <p><b>Более 450</b> построеных проектов</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__img-wrap">
+                                <img class="feature__img" src="img/content/features/helmet.png" alt="helmet">
+                            </div>
+                            <div class="feature__content">
+                                <p><b>13 лет</b> на рынке строительства</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__img-wrap">
+                                <img class="feature__img" src="img/content/features/wood.png" alt="wood">
+                            </div>
+                            <div class="feature__content">
+                                <p>Используем только <b>сухой пиломатериал!</b></p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__img-wrap">
+                                <img class="feature__img" src="img/content/features/scheme.png" alt="Чертеж">
+                            </div>
+                            <div class="feature__content">
+                                <p>Строим по собственной методике <b>уникальных узловых соединений</b></p><a href="#">Читать подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section advantages">
+            <div class="container">
+                <h2 class="section__heading">Почему именно каркасный дом?</h2>
+                <ul class="list-unstyled row advantages__list">
+                    <li class="col media advantages__item">
+                        <img src="img/ui/check.png" class="mr-3" alt="Галочка">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Невысокая стоимость</h5> Например, дом из бруса, построенный по идентичному проекту будет стоить 3 млн., а каркасный — 1 млн.
+                        </div>
+                    </li>
+                    <li class="col media advantages__item">
+                        <img src="img/ui/check.png" class="mr-3" alt="Галочка">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Быстрое строительство</h5> На производство &lt;a href=&quot;#&quot;&gt;домокомплекта&lt;/a&gt; и монтаж мансардного дома требуется, примерно 30 дней
+                        </div>
+                    </li>
+                    <li class="col media advantages__item">
+                        <img src="img/ui/check.png" class="mr-3" alt="Галочка">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Тепло и комфорт</h5> Гибкое использование системы отопления только в помещениях, которые в этом нуждаются, повышает комфорт и экономит деньги
+                        </div>
+                    </li>
+                    <li class="col media advantages__item">
+                        <img src="img/ui/check.png" class="mr-3" alt="Галочка">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Экологическая безопасность</h5> Деревянный каркас и основные элементы дома — продукты переработки натурального сырья, что являются безопасными для вас и ваших детей
+                        </div>
+                    </li>
+                    <li class="col media advantages__item">
+                        <img src="img/ui/check.png" class="mr-3" alt="Галочка">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Всесезонность строительства</h5> Дом можно возводить даже при температуре до -15°C, ведь для каркасной технологии нет «строительного сезона»
+                        </div>
+                    </li>
+                    <li class="col media advantages__item">
+                        <img src="img/ui/check.png" class="mr-3" alt="Галочка">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Сейсмоустойчивость</h5> Каркасные дома выдерживают колебания до 9-ти балов. Именно поэтому они распространены в Японии
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section packages">
+            <div class="packages__bg"></div>
+            <div class="packages__content container">
+                <div class="row">
+                    <div class="col packages__features">
+                        <h2 class="section__heading text-left">Вы сами выбираете каким будет ваш дом</h2>
+                        <ul class="list-unstyled packages__list">
+                            <li class="media">
+                                <img src="img/ui/one.png" class="mr-3" alt="">
+                                <div class="media-body"> Можете выбрать из 40 уже готовых проектов </div>
+                            </li>
+                            <li class="media">
+                                <img src="img/ui/two.png" class="mr-3" alt="">
+                                <div class="media-body"> Либо изменить планировку любого проекта под себя </div>
+                            </li>
+                            <li class="media">
+                                <img src="img/ui/three.png" class="mr-3" alt="">
+                                <div class="media-body"> Также мы можем для вас разработать собственный уникальный проект </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col packages__offers">
+                        <p class="text-center">Вам доступны 3 пакетных предложения комплектации</p>
+                        <ul class="list-unstyled packages__list">
+                            <li class="feature">
+                                <div class="feature__img-wrap">
+                                    <img class="feature__img" src="img/content/packages/base.png" alt="Базовая">
+                                </div>
+                                <div class="feature__content"> Базовая </div>
+                            </li>
+                            <li class="feature">
+                                <div class="feature__img-wrap">
+                                    <img class="feature__img" src="img/content/packages/demiseason.png" alt="Межсезонная">
+                                </div>
+                                <div class="feature__content"> Межсезонная </div>
+                            </li>
+                            <li class="feature">
+                                <div class="feature__img-wrap">
+                                    <img class="feature__img" src="img/content/packages/winter.png" alt="Зимняя">
+                                </div>
+                                <div class="feature__content"> Зимняя </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section questions">
+            <div class="questions__bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="section__heading">Запутались в подрядчиках, условиях и нет ясности?</h2>
+                        <p>Если вы не знаете что выбрать, какая комплектация подойдет или у вас есть вопросы вроде:</p>
+                        <ul class="list-unstyled questions__list">
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="contact-form">
+                            <button type="button" class="contact-form__close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h5 class="contact-form__title" id="free-advice-label">Заполните ваши данные</h5>
+                            <p>Чтобы наш менеджер перезвонил вам и проконсультировал по всем вопросам</p>
+                            <form class="form">
+                                <div class="form-group">
+                                    <label for="free-advice-name" class="visually-hidden">Введите ваше имя</label>
+                                    <input type="text" class="form-control" id="free-advice-name" placeholder="Введите ваше имя">
+                                </div>
+                                <div class="form-group">
+                                    <label for="free-advice-number" class="visually-hidden">Введите ваш номер</label>
+                                    <input type="tel" class="form-control" id="free-advice-number" placeholder="Введите ваш номер">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-lg">Получить бесплатную консультацию</button>
+                                </div>
+                                <div class="form-group">
+                                    <p class="form__notice">Нажимая кнопку вы соглашаетесь на обработку персональных данных</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="section reasons">
+                <div class="container">
+                    <div class="row">
+                        <div class="col reasons__item reasons__item--heading">
+                            <span>5 причин</span>
+                            <span>почему строительство дома заказывают у нас</span>
+                        </div>
+                        <div class="col media reasons__item">
+                            <img src="img/content/reasons/management.png" class="mr-3" alt="Грамотные менеджеры">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Грамотные менеджеры</h5> Наши менеджеры могут пояснить вам детали производства, эксплуатации дома и ответить на самые каверзные технические вопросы
+                            </div>
+                        </div>
+                        <div class="col media reasons__item">
+                            <img src="img/content/reasons/production.png" class="mr-3" alt="Собственное производство">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Собственное производство</h5> Не пилорама на МКАД и не иллюзорное производство. Это собственные производственные мощности, склады, столярные цеха и покрасочные камеры
+                            </div>
+                        </div>
+                        <div class="col media reasons__item">
+                            <img src="img/content/reasons/safety.png" class="mr-3" alt="Бережность и надежность">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Бережность и надежность</h5> Материалы на монтаже укрываются пленкой, комплектующие от поставщиков в оригинальной упаковке, с инструкциями по применению
+                            </div>
+                        </div>
+                        <div class="col media reasons__item">
+                            <img src="img/content/reasons/profit.png" class="mr-3" alt="Соотношение цены и качества">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Соотношение цены и качества</h5> За счет собственного производства и отлаженной годами схемы работы, вы получаете симбиоз доступной цены и качества
+                            </div>
+                        </div>
+                        <div class="col media reasons__item">
+                            <img src="img/content/reasons/expertize.png" class="mr-3" alt="Команда специалистов">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Команда специалистов</h5> У нас в команде 34 специалиста, суммарный опыт которых больше 120 лет. В среднем, над каждым проектом трудится от 5 до 10 человек
+                            </div>
+                        </div>
+                        <div class="col media reasons__item reasons__item--last">
+                            <img src="img/content/reasons/know-how.png" class="mr-3" alt="Наше ноу-хау">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Наше ноу-хау</h5> Работаем по собственной методике уникальных узловых соединений. За годы работы разработали свою систему узлов и соединений, благодаря чему улучшили надежность конструкций
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section advantages">
+                <div class="container">
+                    <h2 class="section__heading">Почему именно каркасный дом?</h2>
+                    <ul class="nav nav-tabs" id="projects" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="suburban-tab" data-toggle="tab" href="#suburban" role="tab" aria-controls="suburban" aria-selected="true">Дачные дома</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="cottages-tab" data-toggle="tab" href="#cottages" role="tab" aria-controls="cottages" aria-selected="false">Коттеджи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="frame-tab" data-toggle="tab" href="#frame" role="tab" aria-controls="frame" aria-selected="false">Каркас 200</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="one-stage-tab" data-toggle="tab" href="#one-stage" role="tab" aria-controls="one-stage" aria-selected="false">Одноэтажные дома</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="projectsContent">
+                        <div class="tab-pane fade show active" id="suburban" role="tabpanel" aria-labelledby="suburban-tab">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house1.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house1.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house1.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house1.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="cottages" role="tabpanel" aria-labelledby="cottages-tab">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house2.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house2.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house2.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house2.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="frame" role="tabpanel" aria-labelledby="frame-tab">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house1.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house1.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house1.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house1.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="one-stage" role="tabpanel" aria-labelledby="one-stage-tab">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house2.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house2.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house2.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="ribbon">Просмотр на площадке</div>
+                                        <img src="img/content/projects/house2.jpg" alt="House">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                                            <p><b>Размер дома:</b> 8х9 м</p>
+                                            <p><b>Площадь:</b> 110 м2</p>
+                                            <p><b>Сроки строительства:</b> до 35 дней</p>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                            <div class="project__badge bade">
+                                                <div class="badge__img"></div>
+                                                <div class="badge__value">2</div>
+                                                <div class="badge__label">кровати</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена сегодня</span>
+                                                        <span class="price__value">от 673 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="price">
+                                                        <span class="price__label">Цена с 1 июля </span>
+                                                        <span class="price__value">от 891 300 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                                                    <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-primary btn-lg">Показать еще проекты</button>
+                </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="projects-modal" tabindex="-1" role="dialog" aria-label="Форма обратной связи" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="project-details">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="fotorama" data-nav="thumbs">
+                                            <img src="img/content/projects/house1.jpg" alt="Дом 1">
+                                            <img src="img/content/projects/house2.jpg" alt="Дом 2">
+                                            <img src="img/content/projects/house1.jpg" alt="Дом 3">
+                                            <img src="img/content/projects/house2.jpg" alt="Дом 4">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="project-details__content">
+                                            <h3> Каркасный дом «Калипсо» </h3>
+                                            <p>Выберите комплектацию</p>
+                                            <ul class="nav nav-tabs" id="projects" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="complect-base-tab" data-toggle="tab" href="#complect-base" role="tab" aria-controls="complect-base" aria-selected="true">Базовая</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="complect-suburban-tab" data-toggle="tab" href="#complect-suburban" role="tab" aria-controls="complect-suburban" aria-selected="false">Дачный дом</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="complect-warm-tab" data-toggle="tab" href="#complect-warm" role="tab" aria-controls="complect-warm" aria-selected="false">Теплый дом</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="complect-full-tab" data-toggle="tab" href="#complect-full" role="tab" aria-controls="complect-full" aria-selected="false">Под ключ</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="projectsContent">
+                                                <div class="tab-pane fade show active" id="complect-base" role="tabpanel" aria-labelledby="complect-base-tab">
+                                                    <p>Фундамент: винтовой, свая 108х2500мм (включая крыльцо), обвязка брус — В ПОДАРОК!</p>
+                                                    <p>Полы первого этажа: лаги пола 40х150мм, с расширителем 40х47, утепление 200мм, черновые полы – ОСП 3 - 6 мм, настил пола - доска пола 35мм.</p>
+                                                    <p>Перекрытия первого этажа: балки перекрытия - 40х150мм, настил пола - доска пола 35мм, утепление - 100мм.</p>
+                                                    <p>Мансарда: каркас - 40х150мм, утепление — 200мм (150+50), по контр – брусу 40х47 мм.</p>
+                                                    <p>Стропильная система и кровля: стропило - 40х150мм, кровля — металлочерепица – В ПОДАРОК!</p>
+                                                    <p>Окна: деревянные, со стеклопакетом, комплект «Зимний» (П 65)</p>
+                                                    <p>Двери: входная - металлическая (Россия), внутренние – деревянные филенчатые</p>
+                                                    <p>Лестница: лестница мансардная – из строганного пиломатериала, с балясинами, с турникетом ограждения на мансарде. Входная - приставная, временная</p>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="price">
+                                                                <span class="price__label">Цена сегодня</span>
+                                                                <span class="price__value">от 673 400 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="price">
+                                                                <span class="price__label">Цена с 1 июля </span>
+                                                                <span class="price__value">от 891 300 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="complect-suburban" role="tabpanel" aria-labelledby="complect-suburban-tab">
+                                                    <p>Фундамент: винтовой, свая 108х2500мм (включая крыльцо), обвязка брус — В ПОДАРОК!</p>
+                                                    <p>Полы первого этажа: лаги пола 40х150мм, с расширителем 40х47, утепление 200мм, черновые полы – ОСП 3 - 6 мм, настил пола - доска пола 35мм.</p>
+                                                    <p>Перекрытия первого этажа: балки перекрытия - 40х150мм, настил пола - доска пола 35мм, утепление - 100мм.</p>
+                                                    <p>Мансарда: каркас - 40х150мм, утепление — 200мм (150+50), по контр – брусу 40х47 мм.</p>
+                                                    <p>Стропильная система и кровля: стропило - 40х150мм, кровля — металлочерепица – В ПОДАРОК!</p>
+                                                    <p>Окна: деревянные, со стеклопакетом, комплект «Зимний» (П 65)</p>
+                                                    <p>Двери: входная - металлическая (Россия), внутренние – деревянные филенчатые</p>
+                                                    <p>Лестница: лестница мансардная – из строганного пиломатериала, с балясинами, с турникетом ограждения на мансарде. Входная - приставная, временная</p>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="price">
+                                                                <span class="price__label">Цена сегодня</span>
+                                                                <span class="price__value">от 673 400 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="price">
+                                                                <span class="price__label">Цена с 1 июля </span>
+                                                                <span class="price__value">от 891 300 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="complect-warm" role="tabpanel" aria-labelledby="complect-warm-tab">
+                                                    <p>Фундамент: винтовой, свая 108х2500мм (включая крыльцо), обвязка брус — В ПОДАРОК!</p>
+                                                    <p>Полы первого этажа: лаги пола 40х150мм, с расширителем 40х47, утепление 200мм, черновые полы – ОСП 3 - 6 мм, настил пола - доска пола 35мм.</p>
+                                                    <p>Перекрытия первого этажа: балки перекрытия - 40х150мм, настил пола - доска пола 35мм, утепление - 100мм.</p>
+                                                    <p>Мансарда: каркас - 40х150мм, утепление — 200мм (150+50), по контр – брусу 40х47 мм.</p>
+                                                    <p>Стропильная система и кровля: стропило - 40х150мм, кровля — металлочерепица – В ПОДАРОК!</p>
+                                                    <p>Окна: деревянные, со стеклопакетом, комплект «Зимний» (П 65)</p>
+                                                    <p>Двери: входная - металлическая (Россия), внутренние – деревянные филенчатые</p>
+                                                    <p>Лестница: лестница мансардная – из строганного пиломатериала, с балясинами, с турникетом ограждения на мансарде. Входная - приставная, временная</p>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="price">
+                                                                <span class="price__label">Цена сегодня</span>
+                                                                <span class="price__value">от 673 400 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="price">
+                                                                <span class="price__label">Цена с 1 июля </span>
+                                                                <span class="price__value">от 891 300 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="complect-full" role="tabpanel" aria-labelledby="complect-full-tab">
+                                                    <p>Фундамент: винтовой, свая 108х2500мм (включая крыльцо), обвязка брус — В ПОДАРОК!</p>
+                                                    <p>Полы первого этажа: лаги пола 40х150мм, с расширителем 40х47, утепление 200мм, черновые полы – ОСП 3 - 6 мм, настил пола - доска пола 35мм.</p>
+                                                    <p>Перекрытия первого этажа: балки перекрытия - 40х150мм, настил пола - доска пола 35мм, утепление - 100мм.</p>
+                                                    <p>Мансарда: каркас - 40х150мм, утепление — 200мм (150+50), по контр – брусу 40х47 мм.</p>
+                                                    <p>Стропильная система и кровля: стропило - 40х150мм, кровля — металлочерепица – В ПОДАРОК!</p>
+                                                    <p>Окна: деревянные, со стеклопакетом, комплект «Зимний» (П 65)</p>
+                                                    <p>Двери: входная - металлическая (Россия), внутренние – деревянные филенчатые</p>
+                                                    <p>Лестница: лестница мансардная – из строганного пиломатериала, с балясинами, с турникетом ограждения на мансарде. Входная - приставная, временная</p>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="price">
+                                                                <span class="price__label">Цена сегодня</span>
+                                                                <span class="price__value">от 673 400 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="price">
+                                                                <span class="price__label">Цена с 1 июля </span>
+                                                                <span class="price__value">от 891 300 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#contact-form" data-dismiss="modal">Узнать точную стоимость</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="section show">
+                    <div class="show__bg"></div>
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="col section__heading">Запишитесь на просмотр готовых проектов</h2>
+                            <div class="col media">
+                                <img src="img/content/show/look.png" class="mr-3" alt="Бинокль">
+                                <div class="media-body"> И посмотрите вживую наши дома. Вы лично убедитесь в качестве нашей работы, а также обсудить все вопросы с менеджером </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>У нас есть две смотровых площадки в Москве</p>
+                                <div class="card show-space">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Домодедово <a href="#">Показать на карте</a></h5>
+                                        <div class="row">
+                                            <div class="col media">
+                                                <img src="img/ui/marker.png" class="mr-3" alt="Адрес">
+                                                <div class="media-body"> Москва, МКАД 65 км, ТД Синдика, д. 3/8 </div>
+                                            </div>
+                                            <div class="col media">
+                                                <img src="img/ui/marker.png" class="mr-3" alt="Проекты">
+                                                <div class="media-body"> Авилон 2, Пересвет ЛК, Любава </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card show-space">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Домодедово <a href="#">Показать на карте</a></h5>
+                                        <div class="row">
+                                            <div class="col media">
+                                                <img src="img/ui/marker.png" class="mr-3" alt="Адрес">
+                                                <div class="media-body"> Москва, МКАД 65 км, ТД Синдика, д. 3/8 </div>
+                                            </div>
+                                            <div class="col media">
+                                                <img src="img/ui/marker.png" class="mr-3" alt="Проекты">
+                                                <div class="media-body"> Авилон 2, Пересвет ЛК, Любава </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-show">Записаться на просмотр</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Modal -->
+                <div class="modal fade" id="modal-show" tabindex="-1" role="dialog" aria-label="Запись на просмотр" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="contact-form">
+                                <button type="button" class="contact-form__close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h5 class="contact-form__title" id="free-advice-label">Заполните ваши данные</h5>
+                                <p>Чтобы наш менеджер перезвонил вам и проконсультировал по всем вопросам</p>
+                                <form class="form">
+                                    <div class="form-group">
+                                        <label for="free-advice-name" class="visually-hidden">Введите ваше имя</label>
+                                        <input type="text" class="form-control" id="free-advice-name" placeholder="Введите ваше имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="free-advice-number" class="visually-hidden">Введите ваш номер</label>
+                                        <input type="tel" class="form-control" id="free-advice-number" placeholder="Введите ваш номер">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-lg">Получить бесплатную консультацию</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="form__notice">Нажимая кнопку вы соглашаетесь на обработку персональных данных</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="section construction">
+                    <div class="construction__bg"></div>
+                    <div class="container">
+                        <h2 class="section__heading">Благодаря собственному производству наши дома собираются как «раз, два, три»</h2>
+                        <div class="row">
+                            <div class="col">
+                                <div class="media">
+                                    <img src="img/content/construction/frame.png" class="mr-3" alt="Каркас">
+                                    <div class="media-body"> На производстве изготавливаем домокомплект </div>
+                                </div>
+                                <p>Каждая деталь дома напиливается в размер, торцуется, нумеруется, подписывается. На участок прибывает, некий, конструктор</p>
+                                <div class="media">
+                                    <img src="img/ui/info.png" class="mr-3" alt="Инфо">
+                                    <div class="media-body"> Это не пилорама и не иллюзорное производство. У нас собственные производственные мощности, склады, столярные цеха и покрасочные камеры </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p>За счет этого</p>
+                                        <ol class="list-unstyled numbered-list">
+                                            <li> Исключаются ошибки и человеческий фактор </li>
+                                            <li> Бригада работает строго по проекту, используя готовый домокомплект </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section reviews">
+                    <div class="container">
+                        <h2 class="section__heading">Отзывы наших клиентов</h2>
+                        <p>В целях анонимности, фото скрыты. Убедиться в достоверности отзывов можете в офисе. Их у нас больше 150 шт.</p>
+                        <div class="reviews__slider slider">
+                            <blockquote class="card">
+                                <p> Очень хорошие мастера! Нам нравится дом. Менеджер не соврал о надежности и уюте. У нас дети, и боялись, что будем мерзнуть зимой и переплачить за комуналку. Спасибо! </p>
+                                <footer>
+                                    <cite>Людмила</cite>
+                                </footer>
+                            </blockquote>
+                            <blockquote class="card">
+                                <p> Очень хорошие мастера! Нам нравится дом. Менеджер не соврал о надежности и уюте. У нас дети, и боялись, что будем мерзнуть зимой и переплачить за комуналку. Спасибо! </p>
+                                <footer>
+                                    <cite>Людмила</cite>
+                                </footer>
+                            </blockquote>
+                            <blockquote class="card">
+                                <p> Очень хорошие мастера! Нам нравится дом. Менеджер не соврал о надежности и уюте. У нас дети, и боялись, что будем мерзнуть зимой и переплачить за комуналку. Спасибо! </p>
+                                <footer>
+                                    <cite>Людмила</cite>
+                                </footer>
+                            </blockquote>
+                            <blockquote class="card">
+                                <p> Очень хорошие мастера! Нам нравится дом. Менеджер не соврал о надежности и уюте. У нас дети, и боялись, что будем мерзнуть зимой и переплачить за комуналку. Спасибо! </p>
+                                <footer>
+                                    <cite>Людмила</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <section class="section steps">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="section__heading">Вот как мы будем с вами работать</h2>
+                                    <ol class="steps__list">
+                                        <li>
+                                            <b>Прием заявки</b>
+                                            <span>Оставляете заявку на сайте или звоните по телефону</span>
+                                        </li>
+                                        <li>
+                                            <b>Коммерческое предложение</b>
+                                            <span>Подготавливаем КП, согласовываем цену и заключаем сделку</span>
+                                        </li>
+                                        <li>
+                                            <b>Подготовка проектного решения</b>
+                                            <span>Готовим полный набор элементов дома, с учетом изменений проекта</span>
+                                        </li>
+                                        <li>
+                                            <b>Размещение в производство</b>
+                                            <span>Отдаем проект на наше производство для подготовки домокомплекта </span>
+                                        </li>
+                                        <li>
+                                            <b>Строительство</b>
+                                            <span>Привозим домокомплект, собираем и строим ваш дом</span>
+                                        </li>
+                                        <li>
+                                            <b>Гарантийное сопровождение</b>
+                                            <span>Держим с вами связь, отвечаем на вопросы, если вдруг что-то сломалось — чиним</span>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section faq">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="section__heading">Когда сомневаются, у нас обычно спрашивают</h2>
+                                    <div class="accordion" id="accordionFaq">
+                                        <div class="card">
+                                            <div class="card-header" id="faq1">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq-answer1" aria-expanded="true" aria-controls="faq-answer1"> Что делать, если у меня нет разрешения на строительство </button>
+                                                </h2>
+                                            </div>
+                                            <div id="faq-answer1" class="collapse show" aria-labelledby="faq1" data-parent="#accordionFaq">
+                                                <div class="card-body"> Наши менеджеры могут вас бесплатно проконсультировать и помочь решить любую проблему по строительству </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="faq2">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq-answer2" aria-expanded="false" aria-controls="faq-answer2"> Можно купить в кредит? </button>
+                                                </h2>
+                                            </div>
+                                            <div id="faq-answer2" class="collapse" aria-labelledby="faq2" data-parent="#accordionFaq">
+                                                <div class="card-body"> Наши менеджеры могут вас бесплатно проконсультировать и помочь решить любую проблему по строительству </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="faq3">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq-answer3" aria-expanded="false" aria-controls="faq-answer3"> Хочу уникальный проект. Это возможно? </button>
+                                                </h2>
+                                            </div>
+                                            <div id="faq-answer3" class="collapse" aria-labelledby="faq3" data-parent="#accordionFaq">
+                                                <div class="card-body"> Наши менеджеры могут вас бесплатно проконсультировать и помочь решить любую проблему по строительству </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="faq4">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq-answer4" aria-expanded="false" aria-controls="faq-answer4"> У нас ограничен бюджет, а дом хотим. Что делать? </button>
+                                                </h2>
+                                            </div>
+                                            <div id="faq-answer4" class="collapse" aria-labelledby="faq4" data-parent="#accordionFaq">
+                                                <div class="card-body"> Наши менеджеры могут вас бесплатно проконсультировать и помочь решить любую проблему по строительству </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="faq5">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq-answer5" aria-expanded="false" aria-controls="faq-answer5"> Мне лучше брусовой или каркасный дом покупать? </button>
+                                                </h2>
+                                            </div>
+                                            <div id="faq-answer5" class="collapse" aria-labelledby="faq5" data-parent="#accordionFaq">
+                                                <div class="card-body"> Наши менеджеры могут вас бесплатно проконсультировать и помочь решить любую проблему по строительству </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="contact-form">
+                                        <button type="button" class="contact-form__close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5 class="contact-form__title" id="free-advice-label">Заполните ваши данные</h5>
+                                        <p>Чтобы наш менеджер перезвонил вам и проконсультировал по всем вопросам</p>
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="free-advice-name" class="visually-hidden">Введите ваше имя</label>
+                                                <input type="text" class="form-control" id="free-advice-name" placeholder="Введите ваше имя">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="free-advice-number" class="visually-hidden">Введите ваш номер</label>
+                                                <input type="tel" class="form-control" id="free-advice-number" placeholder="Введите ваш номер">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-lg">Получить бесплатную консультацию</button>
+                                            </div>
+                                            <div class="form-group">
+                                                <p class="form__notice">Нажимая кнопку вы соглашаетесь на обработку персональных данных</p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
     </main>
+    <div class="footer section">
+        <div class="footer__bg"></div>
+        <div class="container">
+            <div class="card">
+                <h2 class="section__heading">Запишитесь на просмотр готовых проектов</h2>
+                <p>И посмотрите вживую наши дома. Вы лично убедитесь в качестве нашей работы, а также обсудить все вопросы с менеджером </p>
+                <div class="row">
+                    <div class="col">
+                        <p>Наш офис находится по адресу</p>
+                        <div class="row">
+                            <div class="col media">
+                                <img src="img/ui/marker.png" class="mr-3" alt="Адрес">
+                                <div class="media-body"> Москва, МКАД 65 км, ТД Синдика, д. 3/8 </div>
+                            </div>
+                            <div class="col media">
+                                <img src="img/ui/phone.png" class="mr-3" alt="Телефон">
+                                <div class="media-body"> +7 989 333-45-44 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-primary btn-lg btn-block">Записаться на просмотр</button>
+                    </div>
+                    <div class="col">
+                        <a href="#">Политика Конфиденциальности</a>
+                    </div>
+                    <div class="col">
+                        <span>Сайт создан</span>
+                        <img src="img/ui/shevery_logo.png" alt="Shevery">
+                    </div>
+                    <div class="col">© 2019 Берест</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
     <script src="js/vendor/ofi.min.js"></script>
     <script src="js/vendor/slick.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/fotorama.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
