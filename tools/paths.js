@@ -17,11 +17,11 @@ const paths = {
     fonts: 'src/fonts/**/*.{woff,woff2}'
   },
   dist: {
-    html: 'docs',
-    css: 'docs/css',
-    js: 'docs/js',
-    images: 'docs/img',
-    fonts: 'docs/fonts'
+    html: 'dist',
+    css: 'style.css',
+    js: 'js',
+    images: 'assets/img',
+    fonts: 'assets/fonts'
   }
 }
 
